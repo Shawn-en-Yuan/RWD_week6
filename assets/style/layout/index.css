@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-banner {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg") center center no-repeat;
+  background-size: cover;
+  height: 480px;
+  padding-top: 254px;
+}
+
+.nav-scroller {
+  height: 2.75rem;
+  /* 隱藏下方捲軸 */
+  overflow-y: hiden;
+  border-bottom: 1px solid #707070;
+}
+
+.nav-scroller .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /* 隱藏下方捲軸 */
+  padding-bottom: 1 rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .nav-scroller .nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.nav-scroller .nav .active {
+  border-bottom: 1px solid #E31277;
+}
+
+.nav-scroller .nav .nav-link:hover {
+  border-bottom: 1px solid #E31277;
+}
+
+.fb-icon {
+  width: 24px;
+  height: auto;
+}
+
+.review {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true) center center no-repeat;
+  background-size: cover;
+  height: 480px;
+}
+
+.review img {
+  width: 128px;
+  height: 128px;
+}
+
+.review .col-md-8 {
+  height: 480px;
+}
+
+.swiper .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.subscribe {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg) center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.subscribe .input-group {
+  width: 345px;
+}
+
+.bookTicket .bookTicket-pic {
+  height: 256px;
+}
+
+.exhibition-info .exhibition-pic {
+  height: 400px;
+}
+
+.exhibition-info .exhibition-pic-art {
+  height: 559px;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body .card {
+  max-width: 540px;
+}
+
+.modal-body .card img {
+  width: 100%;
+  height: 120px;
+}
+
+.modal-body .card-body {
+  padding: 0 1rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.timeline-section {
+  position: relative;
+  margin: 30px 0;
+}
+
+.timeline-pointer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #E31277;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  background: white;
+  z-index: 2;
+}
+
+.timeline-pointer.active::before {
+  content: "";
+  background: #E31277;
+}
+
+.timeline-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #E31277;
+}
+
+.timeline-pointer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.personal-information .discount {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=index.css.map */
